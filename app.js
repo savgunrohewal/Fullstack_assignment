@@ -19,3 +19,4 @@ app.post('/api/auth/login', (req, res) => {
 });
 
 module.exports = app;
+ // This file sets up an Express server with two routes: /api/auth/register and /api/auth/login. The register route checks for missing fields and existing users, while the login route checks for valid credentials. The app is exported for use in testing.

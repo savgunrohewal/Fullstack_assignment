@@ -13,8 +13,8 @@ describe('Auth Routes', () => {
 
   test('Register existing user', async () => {
     const res = await request(app).post('/api/auth/register').send({
-      email: 'test@test.com',
-      password: '123456'
+      email: 'test@test.com',// already exists from previous test
+      password: '123456' // same password as previous test
     });
     expect(res.statusCode).toBe(400);
   });
